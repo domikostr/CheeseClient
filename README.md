@@ -2,7 +2,7 @@
   <img src="github-preview.png" alt="Käse Client" width="720">
 </p>
 
-# 🧀 Käse Client
+#  Käse Client
 
 *Käse = cheese.*
 
@@ -23,7 +23,6 @@ We are two Minecraft players who play a lot, and we kept running into the same p
 - **Their own launcher.** You have to switch to a different launcher just to use them. Käse Client is a normal mod, so you keep your launcher, your profiles and your other mods.
 - **Ads and noise.** Menus full of promotions, shops and things you never asked for. Ours is a clean, quiet interface.
 - **Features nobody needs.** Dozens of modules, most of which you switch off on day one. We build what is actually useful and make it look good.
-- **A look that does not fit Minecraft.** We wanted a consistent glass style where everything can be moved, resized and recoloured.
 
 Käse Client is also the place where we try our own ideas. We are always open to ideas and feedback, because the best features come from players.
 
@@ -77,12 +76,12 @@ Cosmetics are only visible to you for now, because other players would need a se
 
 ## Feedback and ideas
 
-Found a bug or have an idea? Open an [issue](../../issues) or tell us on Discord: **[YOUR DISCORD LINK]**.
+Found a bug or have an idea? Open an [issue](../../issues) or tell us on Discord: https://discord.gg/pra6k5WEFK 
 When you report a bug, please include your Minecraft version, other mods you use and the `latest.log` from your `logs` folder.
 
 ## License
 
-Käse Client is **not open source**. Copyright (c) 2026 [YOUR NAME] and [FRIEND'S NAME]. All rights reserved.
+Käse Client is **not open source**. Copyright (c) 2026 khsp. and BayHarbotButcher. All rights reserved.
 
 In short:
 - ✅ Download it and use it for yourself, for free.
@@ -97,4 +96,4 @@ The full text is in [LICENSE](LICENSE). If you want to do something that is not 
 - Built with [Fabric](https://fabricmc.net/).
 - Fonts and other third-party components: see [THIRD_PARTY.md](THIRD_PARTY.md) for sources and licenses. They keep their own licenses.
 
-Made by **[YOUR NAME]** and **[FRIEND'S NAME]**.
+Made by **Khsp.** and **BayHrbotButcher**.
