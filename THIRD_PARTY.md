@@ -63,4 +63,4 @@ Käse Client does not send personal data to any service.
 ## Report a problem
 
 If you think a component is missing or wrongly credited, please open an issue
-or contact us: [YOUR DISCORD LINK / CONTACT].
+or contact us: https://discord.gg/pra6k5WEFK.
