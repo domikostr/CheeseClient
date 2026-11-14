@@ -1,99 +1,104 @@
-<p align="center">
-  <img src="github-preview.png" alt="Käse Client" width="720">
-</p>
-
-#  Käse Client
+# Käse Client
 
 *Käse = cheese.*
 
-A clean glass-style client mod for Minecraft Java Edition, built for Fabric.
-No launcher, no ads, no cheats. Just a mod you drop into your `mods` folder.
+A client-side Fabric mod for Minecraft Java Edition with a customizable glass-style interface, HUD modules, visual options, cosmetics, and local tools. No separate launcher, ads, combat hacks, or movement hacks.
 
-> **Beta.** Käse Client is early. Expect rough edges, and please tell us about them.
-> Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
-
-## What is it?
-
-Käse Client is a client-side Fabric mod with glass-style menus, themes and a set of HUD and quality-of-life modules. It is purely cosmetic and informational: no combat or movement hacks.
-
-## Why are we making it?
-
-We are two Minecraft players who play a lot, and we kept running into the same problems with the big clients:
-
-- **Their own launcher.** You have to switch to a different launcher just to use them. Käse Client is a normal mod, so you keep your launcher, your profiles and your other mods.
-- **Ads and noise.** Menus full of promotions, shops and things you never asked for. Ours is a clean, quiet interface.
-- **Features nobody needs.** Dozens of modules, most of which you switch off on day one. We build what is actually useful and make it look good.
-
-Käse Client is also the place where we try our own ideas. We are always open to ideas and feedback, because the best features come from players.
+> **Käse Client 1.0.0** supports Minecraft **1.21.11**. It is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft.
 
 ## Features
 
-**The usual client stuff** (every module can be switched on or off)
+### HUD and information modules
 
-- FPS, ping, coordinates, CPS counter
-- Keystrokes
-- Armor HUD and potion HUD
-- Combo counter, speedometer, day counter, IRL time
-- Move and resize every module freely in the layout editor
+- **FPS Display**, **Ping Display**, **Coordinates**, **CPS Counter**, and **Combo Counter**
+- **Day Counter**, **IRL Time**, **Speedometer**, **Reach Display**, **TPS Display**, and **Player Angle**
+- **Keystrokes**, **Crosshair**, **Direction HUD**, **WAILA**, **Armor HUD**, and **Potion HUD**
+- **Saturation**, **Scoreboard**, and **Boss Bar** modules
+- Move, resize, and configure HUD modules in the live **Layout Editor**
 
-**Our own ideas** 🤫
+### Quality-of-life modules
 
-- Cobweb outline
-- Name history
+- **Freelook**, **Zoom**, **Toggle Sprint / Sneak**, and **Jump Reset Timing**
+- **Waypoints**, including a saved last-death point, and **Ping Marker**
+- **Name History**, **Nick Hider**, **Tier Tagger**, and **TNT Countdown**
+- **Chat Tweaks** and **Better Screenshots**
+- **Creative Flight** speed controls
 
-*We are not telling you how they work yet. Try them and find out.*
+### World and visual modules
 
-**Look and feel**
+- **No Fog**, **Fullbright**, and **Time & Weather Changer**
+- **Block Outline**, **Custom Hitboxes**, **Cobweb Outlines**, and **Hit Color**
+- **See-Through Armor**, **Old Animations**, **Kill Effects**, and **Locator Bar Heads**
+- **Item Physics**, **Big Items**, **Item Lock**, **Shiny Pots**, **View Models**, and **Visual Items**
+- **Motion Blur** and **Color Saturation**
 
-- Themes (Cheese by default, plus more) and your own glass color
-- Minecraft mode with square corners
-- Free cosmetics (see below)
+### Cosmetics and customization
 
-## Cosmetics
+- Cosmetics: **Capes, Pets, Wings, Chains, Crowns, Halos, Auras, and Shields**
+- **Emotes** with an emote wheel, plus a **Skin Library** and custom cosmetic pictures
+- Main menu with module categories, keybinds, profiles, cosmetics, and settings
+- Themes, custom colors, fonts, glass appearance, and configurable animations
+- Configuration can be stored per game instance or shared between instances
 
-There are free cosmetics. We will probably add paid ones later, but everything is free at the start, and what is free now stays free.
-Cosmetics are only visible to you for now, because other players would need a server that shares them.
+### Sky Library, maps, and local statistics
+
+- **Sky Library** for importing supported resource-pack skies, previewing them, and setting sky time and weather options
+- **Built-in skies** and resource-pack sky selection
+- **World Map** that records chunks loaded by Minecraft, separately by world and dimension
+- Local **Playtime** and **Streak** statistics
+
+### Media and other features
+
+- **Dynamic Island / Now Playing** media controls
+- UI sounds and sound muting options
+- Screenshot helpers and chat enhancements
 
 ## Installation
 
 1. Install [Fabric Loader](https://fabricmc.net/use/installer/) for Minecraft **1.21.11**.
-2. Download [Fabric API](https://modrinth.com/mod/fabric-api) for 1.21.11 and put it into your `mods` folder.
-3. Download the latest Käse Client `.jar` from the [Releases](../../releases) page and put it into the same `mods` folder.
-4. Start Minecraft with the Fabric profile. Press **Right Shift** to open the layout editor.
+2. Download [Fabric API](https://modrinth.com/mod/fabric-api) for Minecraft 1.21.11 and place it in your `mods` folder.
+3. Download the latest Käse Client `.jar` from [GitHub Releases](https://github.com/domikostr/CheeseClient/releases) and place it in the same `mods` folder.
+4. Start Minecraft with your Fabric profile.
+5. Press **Right Shift** to open the Layout Editor or **Right Control** to open the main menu. You can change both keybinds in Minecraft's Controls settings.
+
+Käse Client is a **client-side mod** and does not need to be installed on the server. Always check the rules of the server you play on.
 
 ## Supported versions
 
-| Minecraft | Status |
-|---|---|
-| 1.21.11 | supported (beta) |
-| 1.21 – 1.21.10 | untested, planned |
+| Minecraft version | Status |
+| --- | --- |
+| 1.21.11 | Supported and tested |
 
-## Privacy and safety
+Other Minecraft versions are not currently supported.
 
-- Käse Client is client-side only and sends no personal data anywhere.
-- Some servers do not allow client mods. Check the rules of your server before you use any modules there.
-- Use at your own risk, as with any mod.
+## Compatibility notes
 
-## Feedback and ideas
+- With VulkanMod, use **Simple** Motion Blur. **Camera** Motion Blur is unsupported with VulkanMod.
+- Shader glass may fall back to its flat appearance if the graphics backend cannot use the shader.
+- Dynamic Island media integration uses Linux MPRIS (`playerctl` or `dbus-send`).
+- Sky imports enforce file and texture size limits. Oversized textures are rejected rather than resized. OptiFine/MCPatcher sky properties are read by the mod; those skies are not converted into another format.
+- The World Map records only chunks Minecraft has loaded; it is not a complete server map.
 
-Found a bug or have an idea? Open an [issue](../../issues) or tell us on Discord: https://discord.gg/pra6k5WEFK 
-When you report a bug, please include your Minecraft version, other mods you use and the `latest.log` from your `logs` folder.
+## Privacy
+
+Käse Client does not use telemetry. Some optional features contact external services when you use them:
+
+- The Skin Library contacts Minecraft/Mojang services for profile, skin, and cape actions. Skin and cape changes send your Minecraft access token with the relevant request. The mod does not store or log that token.
+- Tier Tagger requests tier data from MCTiers, SubTiers, or PvPTiers using a player name or UUID.
+- Dynamic Island may download album artwork from the image URL supplied by your media player.
+- Name History opens the selected player's NameMC profile in your browser.
+
+## Feedback and bug reports
+
+Open an [issue](https://github.com/domikostr/CheeseClient/issues) or contact us on [Discord](https://discord.gg/pra6k5WEFK). For bug reports, include your Minecraft version, other installed mods, and the `latest.log` file from your `logs` folder.
 
 ## License
 
-Käse Client is **not open source**. Copyright (c) 2026 khsp. and BayHarbotButcher. All rights reserved.
+Käse Client is **not open source**. It is distributed under the custom [Käse Client License](LICENSE), which allows free private, non-commercial use under its terms. Redistribution, modification, and reuse of project code or assets require written permission.
 
-In short:
-- ✅ Download it and use it for yourself, for free.
-- ✅ Show it in videos, streams and screenshots (monetized is fine). Please link to this page.
-- ❌ Do not re-upload, sell or modify it, and do not reuse our code, textures, sounds or logo.
-- ❌ Do not use the name "Käse Client" for your own project.
-
-The full text is in [LICENSE](LICENSE). If you want to do something that is not allowed there, ask us first.
+Third-party components are not covered by the Käse Client License and retain their own licenses. See [`src/main/resources/THIRD_PARTY.md`](src/main/resources/THIRD_PARTY.md) and the license files included with the mod.
 
 ## Credits
 
 - Built with [Fabric](https://fabricmc.net/).
-- Fonts and other third-party components: see [THIRD_PARTY.md](THIRD_PARTY.md) for sources and licenses. They keep their own licenses.
-
-Made by **Khsp.** and **BayHrbotButcher**.
+- Made by **khsp.** and **BayHarbotButcher**.
